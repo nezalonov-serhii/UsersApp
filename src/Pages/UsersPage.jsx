@@ -9,6 +9,7 @@ export const UsersPage = () => {
   const users = useSelector(selectUsers);
 
   useEffect(() => {
+    console.log('fire')
     dispatch(fetchAll());
   }, [dispatch]);
 
